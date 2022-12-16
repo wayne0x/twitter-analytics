@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Report } from "../src/components/Report";
-import { ButtonStyle } from "../src/styles/Buttons.styles"
+// import { ButtonStyle } from "../src/styles/Buttons.styles"
 import { getReportData } from "../src/utils/db";
 
 export default function ViewReport() {
@@ -26,7 +26,7 @@ export default function ViewReport() {
             }
             className="mt-3 rounded-md shadow-md px-4 py-3"
           />
-          <button className={ButtonStyle('primary')}>Submit</button>
+          <button >Submit</button>
         </form>
       </>
       { data && <Report data={data}/> }
